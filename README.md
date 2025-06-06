@@ -112,6 +112,8 @@ Abre el proyecto en tu editor de código o en un servidor local (puedes usar liv
 Asegúrate de tener archivos como favorita3.html, favorita4.html, etc., en el mismo directorio que index.html.
 
 Ejecuta el proyecto. Haz clic en el menú "Favoritos" y accede a las opciones como "Favorito 4" para ver la carga dinámica.
+![Descrição do GIF](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2NrajMzNTZoeTgzejBlZzZpcnY4Zm5oYXFoYnVpOGRmNmUxemk2MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gHZpI77ycv3h9oLFvc/giphy.gif)
+
 
 📌 Notas Finales
 Este menú es altamente escalable y adaptable a distintos tipos de aplicaciones SPA. Puede ampliarse fácilmente con más niveles de submenú, diferentes estilos o integraciones con frameworks como Vue, React o Alpine.js.
