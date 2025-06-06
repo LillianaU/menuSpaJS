@@ -40,9 +40,9 @@ Responsividad: Clases como sm:hidden, sm:flex y hidden para ocultar o mostrar co
 Efecto de Botón: rounded-md, px-4, py-2, y transition-colors para apariencia de botón interactivo.
 
 3. 🖱️ Lógica en JavaScript
-Carga Dinámica:
+### Carga Dinámica: **
 
-js
+<pre>
 
 function loadPage(page) {
   fetch(page)
@@ -51,17 +51,19 @@ function loadPage(page) {
       document.getElementById('content').innerHTML = html;
     });
 }
-Menú Hamburguesa:
+</pre>  
 
-js
+### Menú Hamburguesa: **
 
+
+<pre>
 document.getElementById('menu-toggle').addEventListener('click', () => {
   document.getElementById('menu').classList.toggle('hidden');
 });
-Submenús Interactivos:
+</pre>  
+### Submenús Interactivos:**
 
-js
-
+<pre>
 const toggleSubmenuLinks = document.querySelectorAll('.toggle-submenu');
 
 toggleSubmenuLinks.forEach(link => {
@@ -73,7 +75,10 @@ toggleSubmenuLinks.forEach(link => {
     }
   });
 });
-Estado Activo: Se resalta la opción seleccionada con bg-blue-700.
+
+</pre>
+
+### Estado Activo: Se resalta la opción seleccionada con bg-blue-700. **
 
 4. 🔄 Mejoras Iterativas
 Visibilidad de Submenús: Se reemplazó group-hover:block por control manual con JS para mantener submenús abiertos al interactuar.
@@ -81,7 +86,7 @@ Visibilidad de Submenús: Se reemplazó group-hover:block por control manual con
 Selección Precisa: Se ajustó el comportamiento para que elementos como "Favorito 4" se activen correctamente sin cerrar su contenedor.
 
 📝 Estructura de Menú (Ejemplo HTML)
-
+<pre>
 <li class="relative">
   <a href="#" class="toggle-submenu">Favoritos ►</a>
   <ul class="submenu hidden">
@@ -95,13 +100,13 @@ Selección Precisa: Se ajustó el comportamiento para que elementos como "Favori
     </li>
   </ul>
 </li>
+  </pre>
 🖥️ Instrucciones de Uso
 Clona el repositorio:
 
-bash
-Copiar
-Editar
+<pre>
 git clone https://github.com/tuusuario/tu-repositorio.git
+</pre>
 Abre el proyecto en tu editor de código o en un servidor local (puedes usar live-server o extensiones similares).
 
 Asegúrate de tener archivos como favorita3.html, favorita4.html, etc., en el mismo directorio que index.html.
