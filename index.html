@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SPA Menu</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-gray-100 dark:bg-gray-900">
   <nav class="bg-blue-900 p-4 sticky top-0 z-10 dark:border-gray-700 shadow-md">
-    <div class="max-w-screen-xl flex items-center justify-between mx-auto p-4">
+    <div class="max-w-screen-xl mx-auto p-4 flex items-center justify-between">
       <div class="flex items-center">
         <button id="menu-toggle" class="sm:hidden text-white focus:outline-none">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -16,19 +17,19 @@
           </svg>
         </button>
       </div>
-      <ul id="menu" class="hidden sm:flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-6">
-        <li><a href="#contenido" data-page="contenido.html" class="text-white text-lg font-medium px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300 bg-blue-800 w-40 text-center block">Contenido</a></li>
-        <li><a href="#nosotros" data-page="nosotros.html" class="text-white text-lg font-medium px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300 bg-blue-800 w-40 text-center block">Nosotros</a></li>
-        <li><a href="#novedades" data-page="novedades.html" class="text-white text-lg font-medium px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300 bg-blue-800 w-40 text-center block">Novedades</a></li>
-        <li class="relative">
-          <a href="#" data-page="novedades.html" class="text-white text-lg font-medium px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300 bg-blue-800 w-40 text-center block toggle-submenu">Favoritos ►</a>
-          <ul class="absolute left-0 mt-2 bg-blue-900 shadow-lg rounded-md hidden w-40 submenu">
-            <li><a href="#" data-page="novedades.html" class="block text-white text-lg font-medium px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300 w-40 text-center">Favorito 1</a></li>
+      <ul id="menu" class="flex-col sm:flex-row sm:flex justify-center items-center space-y-2 sm:space-y-0 sm:space-x-6 hidden sm:flex w-full sm:w-auto">
+        <li><a href="#contenido" data-page="contenido.html" class="text-white text-lg font-medium px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300 bg-blue-800 w-full sm:w-40 text-center block">Contenido</a></li>
+        <li><a href="#nosotros" data-page="nosotros.html" class="text-white text-lg font-medium px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300 bg-blue-800 w-full sm:w-40 text-center block">Nosotros</a></li>
+        <li><a href="#novedades" data-page="novedades.html" class="text-white text-lg font-medium px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300 bg-blue-800 w-full sm:w-40 text-center block">Novedades</a></li>
+        <li class="relative w-full sm:w-auto">
+          <a href="#" class="text-white text-lg font-medium px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300 bg-blue-800 w-full sm:w-40 text-center block toggle-submenu">Favoritos ►</a>
+          <ul class="absolute left-0 mt-2 bg-blue-900 shadow-lg rounded-md hidden w-full max-w-[280px] submenu z-20">
+            <li><a href="#favorito1" data-page="favorito1.html" class="block text-white text-lg font-medium px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300 w-full text-center">Favorito 1</a></li>
             <li class="relative">
-              <a href="#" data-page="novedades.html" class="block text-white text-lg font-medium px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300 w-40 text-center toggle-submenu">Favorito 2 ►</a>
-              <ul class="absolute left-full top-0 mt-0 bg-blue-900 shadow-lg rounded-md hidden w-40 submenu">
-                <li><a href="#favorito3" data-page="favorita3.html" class="block text-white text-lg font-medium px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300 w-40 text-center">Favorito 3</a></li>
-                <li><a href="#Favorito4" data-page="favorita4.html" class="block text-white text-lg font-medium px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300 w-40 text-center">Favorito 4</a></li>
+              <a href="#" class="block text-white text-lg font-medium px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300 w-full text-center toggle-submenu">Favorito 2 ►</a>
+              <ul class="absolute left-0 top-full mt-0 bg-blue-900 shadow-lg rounded-md hidden w-full max-w-[280px] submenu z-20">
+                <li><a href="#favorito3" data-page="favorita3.html" class="block text-white text-lg font-medium px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300 w-full text-center">Favorito 3</a></li>
+                <li><a href="#favorito4" data-page="favorita4.html" class="block text-white text-lg font-medium px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300 w-full text-center">Favorito 4</a></li>
               </ul>
             </li>
           </ul>
@@ -39,72 +40,21 @@
   <div id="content" class="container mx-auto px-4 py-8 min-h-[80vh] text-center">
     <p class="text-gray-600 dark:text-gray-300">Selecciona una opción del menú para ver el contenido.</p>
   </div>
-  <script>
-    const contentDiv = document.getElementById('content');
-    const navLinks = document.querySelectorAll('nav ul li a');
-    const menuToggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('menu');
-    const toggleSubmenuLinks = document.querySelectorAll('.toggle-submenu');
+  <footer class="bg-blue-900 text-white py-4">
+    <div class="max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-6">
+      <p class="text-sm text-center">© 2025 Todos los derechos reservados</p>
+      <div class="flex space-x-4">
+        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="text-white hover:text-red-500 transition-colors duration-300" title="YouTube">
+          <i class="fab fa-youtube fa-lg"></i><span class="sr-only">YouTube</span>
+        </a>
+        <a href="https://www.github.com" target="_blank" rel="noopener noreferrer" class="text-white hover:text-gray-300 transition-colors duration-300" title="GitHub">
+          <i class=" f ab fa-github fa-lg"></i><span class="sr-only">GitHub</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="server.js">
 
-    menuToggle.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-    });
-
-    toggleSubmenuLinks.forEach(link => {
-      link.addEventListener('click', (e) => {
-        const submenu = link.nextElementSibling;
-        if (submenu.classList.contains('submenu')) {
-          e.preventDefault();
-          submenu.classList.toggle('hidden');
-        }
-      });
-    });
-
-    async function loadPage(page) {
-      contentDiv.innerHTML = '<p class="text-gray-500 italic">Cargando...</p>';
-      try {
-        const response = await fetch(page);
-        if (!response.ok) throw new Error('No se pudo cargar la página. Intenta de nuevo.');
-        const html = await response.text();
-        contentDiv.innerHTML = html;
-      } catch (error) {
-        contentDiv.innerHTML = `<p class="text-red-500 font-semibold">Error: ${error.message}</p>`;
-      }
-    }
-
-    function updateActiveLink(clickedLink) {
-      navLinks.forEach(link => link.classList.remove('bg-blue-700'));
-      clickedLink.classList.add('bg-blue-700');
-    }
-
-    navLinks.forEach(link => {
-      link.addEventListener('click', (e) => {
-        const page = link.getAttribute('data-page');
-        if (page) {
-          e.preventDefault();
-          window.history.pushState({ page }, '', `#${page.split('.')[0]}`);
-          loadPage(page);
-          updateActiveLink(link);
-          if (window.innerWidth < 640) {
-            menu.classList.add('hidden');
-          }
-        }
-      });
-    });
-
-    window.addEventListener('popstate', (e) => {
-      const page = e.state?.page || 'contenido.htm';
-      loadPage(page);
-      const activeLink = Array.from(navLinks).find(link => link.getAttribute('data-page') === page);
-      if (activeLink) updateActiveLink(activeLink);
-    });
-
-    const initialPage = window.location.hash 
-      ? `${window.location.hash.slice(1)}.html` 
-      : 'contenido.htm';
-    const initialLink = Array.from(navLinks).find(link => link.getAttribute('data-page') === initialPage) || navLinks[0];
-    loadPage(initialPage);
-    updateActiveLink(initialLink);
   </script>
 </body>
 </html>
