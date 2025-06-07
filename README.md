@@ -113,6 +113,8 @@ Asegúrate de tener archivos como favorita3.html, favorita4.html, etc., en el mi
 
 Ejecuta el proyecto. Haz clic en el menú "Favoritos" y accede a las opciones como "Favorito 4" para ver la carga dinámica.
 ![Descrição do GIF](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2NrajMzNTZoeTgzejBlZzZpcnY4Zm5oYXFoYnVpOGRmNmUxemk2MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gHZpI77ycv3h9oLFvc/giphy.gif)
+ ### Despliegue:
+ [Ver Menú SPA JS](https://lillianau.github.io/menuSpaJS/)
 
 
 📌 Notas Finales
